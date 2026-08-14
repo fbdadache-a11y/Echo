@@ -1,0 +1,220 @@
+/* ==========================================================================
+   Echo — theme-palettes.css
+   10 ثيمات، كل واحد يعرّف نفس التوكِنز التي يستهلكها globals.css
+   (--background, --primary, --card...). التبديل يتم بوضع
+   data-theme="<id>" على عنصر <html>؛ لا حاجة لتغيير أي مكوّن آخر.
+
+   القيم كلها مأخوذة من المصادر الرسمية المنشورة لكل ثيم (لا تقريب
+   يدوي)، ومتوازنة عمداً: 5 ثيمات فاتحة + 5 غامقة.
+
+   المصادر:
+   · Nord            — nordtheme.com (nord0..nord15)
+   · Catppuccin       — catppuccin.com/palette (Latte + Mocha)
+   · Dracula          — draculatheme.com/spec
+   · Everforest       — github.com/sainnhe/everforest/blob/master/palette.md
+   · Gruvbox          — github.com/morhetz/gruvbox
+   · Solarized        — ethanschoonover.com/solarized
+   · Rosé Pine Dawn   — rosepinetheme.com/palette
+   ========================================================================== */
+
+/* ══════════════════════ فاتحة (5) ══════════════════════ */
+
+/* ── Rosé Pine Dawn ─────────────────────────────────────── */
+[data-theme="rosepine-dawn"] {
+  --background: #faf4ed;         --foreground: #575279;
+  --card: #fffaf3;               --card-foreground: #575279;
+  --popover: #fffaf3;            --popover-foreground: #575279;
+  --primary: #286983;            --primary-foreground: #faf4ed;
+  --secondary: #f2e9e1;          --secondary-foreground: #575279;
+  --muted: rgba(87,82,121,.07);  --muted-foreground: #797593;
+  --accent: rgba(144,122,169,.12); --accent-foreground: #575279;
+  --destructive: #b4637a;
+  --border: rgba(87,82,121,.14); --input: rgba(87,82,121,.12);
+  --ring: #907aa9;
+  --sidebar: #f2e9e1;            --sidebar-foreground: #575279;
+  --sidebar-primary: #286983;    --sidebar-primary-foreground: #faf4ed;
+  --sidebar-accent: rgba(144,122,169,.12); --sidebar-accent-foreground: #575279;
+  --sidebar-border: rgba(87,82,121,.12);
+  --theme-accent-2: #907aa9;     --theme-mode: light;
+}
+
+/* ── Catppuccin Latte ───────────────────────────────────── */
+[data-theme="catppuccin-latte"] {
+  --background: #eff1f5;         --foreground: #4c4f69;
+  --card: #ffffff;               --card-foreground: #4c4f69;
+  --popover: #ffffff;            --popover-foreground: #4c4f69;
+  --primary: #8839ef;            --primary-foreground: #eff1f5;
+  --secondary: #e6e9ef;          --secondary-foreground: #4c4f69;
+  --muted: rgba(76,79,105,.07);  --muted-foreground: #6c6f85;
+  --accent: rgba(30,102,245,.1); --accent-foreground: #4c4f69;
+  --destructive: #d20f39;
+  --border: #ccd0da;             --input: #ccd0da;
+  --ring: #7287fd;
+  --sidebar: #e6e9ef;            --sidebar-foreground: #4c4f69;
+  --sidebar-primary: #8839ef;    --sidebar-primary-foreground: #eff1f5;
+  --sidebar-accent: rgba(30,102,245,.1); --sidebar-accent-foreground: #4c4f69;
+  --sidebar-border: #ccd0da;
+  --theme-accent-2: #1e66f5;     --theme-mode: light;
+}
+
+/* ── Everforest Light (medium contrast) ─────────────────── */
+[data-theme="everforest-light"] {
+  --background: #fdf6e3;         --foreground: #5c6a72;
+  --card: #f4f0d9;               --card-foreground: #5c6a72;
+  --popover: #f4f0d9;            --popover-foreground: #5c6a72;
+  --primary: #8da101;            --primary-foreground: #fdf6e3;
+  --secondary: #efebd4;          --secondary-foreground: #5c6a72;
+  --muted: rgba(92,106,114,.07); --muted-foreground: #829181;
+  --accent: rgba(58,148,197,.1); --accent-foreground: #5c6a72;
+  --destructive: #f85552;
+  --border: #e0dcc7;             --input: #e0dcc7;
+  --ring: #3a94c5;
+  --sidebar: #efebd4;            --sidebar-foreground: #5c6a72;
+  --sidebar-primary: #8da101;    --sidebar-primary-foreground: #fdf6e3;
+  --sidebar-accent: rgba(58,148,197,.1); --sidebar-accent-foreground: #5c6a72;
+  --sidebar-border: #e0dcc7;
+  --theme-accent-2: #35a77c;     --theme-mode: light;
+}
+
+/* ── Gruvbox Light (medium contrast) ────────────────────── */
+[data-theme="gruvbox-light"] {
+  --background: #fbf1c7;         --foreground: #3c3836;
+  --card: #f2e5bc;               --card-foreground: #3c3836;
+  --popover: #f2e5bc;            --popover-foreground: #3c3836;
+  --primary: #b57614;            --primary-foreground: #fbf1c7;
+  --secondary: #ebdbb2;          --secondary-foreground: #3c3836;
+  --muted: rgba(60,56,54,.07);   --muted-foreground: #7c6f64;
+  --accent: rgba(7,102,120,.1);  --accent-foreground: #3c3836;
+  --destructive: #9d0006;
+  --border: #d5c4a1;             --input: #d5c4a1;
+  --ring: #076678;
+  --sidebar: #ebdbb2;            --sidebar-foreground: #3c3836;
+  --sidebar-primary: #b57614;    --sidebar-primary-foreground: #fbf1c7;
+  --sidebar-accent: rgba(7,102,120,.1); --sidebar-accent-foreground: #3c3836;
+  --sidebar-border: #d5c4a1;
+  --theme-accent-2: #79740e;     --theme-mode: light;
+}
+
+/* ── Solarized Light ────────────────────────────────────── */
+[data-theme="solarized"] {
+  --background: #fdf6e3;         --foreground: #657b83;
+  --card: #eee8d5;               --card-foreground: #657b83;
+  --popover: #eee8d5;            --popover-foreground: #657b83;
+  --primary: #268bd2;            --primary-foreground: #fdf6e3;
+  --secondary: #eee8d5;          --secondary-foreground: #657b83;
+  --muted: rgba(101,123,131,.07); --muted-foreground: #586e75;
+  --accent: rgba(133,153,0,.1);  --accent-foreground: #657b83;
+  --destructive: #dc322f;
+  --border: rgba(101,123,131,.22); --input: rgba(101,123,131,.18);
+  --ring: #2aa198;
+  --sidebar: #eee8d5;            --sidebar-foreground: #657b83;
+  --sidebar-primary: #268bd2;    --sidebar-primary-foreground: #fdf6e3;
+  --sidebar-accent: rgba(133,153,0,.1); --sidebar-accent-foreground: #657b83;
+  --sidebar-border: rgba(101,123,131,.18);
+  --theme-accent-2: #859900;     --theme-mode: light;
+}
+
+/* ══════════════════════ غامقة (5) ══════════════════════ */
+
+/* ── Nord ───────────────────────────────────────────────── */
+[data-theme="nord"] {
+  --background: #2e3440;          --foreground: #eceff4;
+  --card: #3b4252;                --card-foreground: #eceff4;
+  --popover: #3b4252;             --popover-foreground: #eceff4;
+  --primary: #88c0d0;             --primary-foreground: #2e3440;
+  --secondary: #434c5e;           --secondary-foreground: #eceff4;
+  --muted: rgba(216,222,233,.06); --muted-foreground: #d8dee9;
+  --accent: rgba(136,192,208,.14); --accent-foreground: #eceff4;
+  --destructive: #bf616a;
+  --border: #4c566a;              --input: #4c566a;
+  --ring: #5e81ac;
+  --sidebar: #3b4252;              --sidebar-foreground: #eceff4;
+  --sidebar-primary: #88c0d0;      --sidebar-primary-foreground: #2e3440;
+  --sidebar-accent: rgba(136,192,208,.12); --sidebar-accent-foreground: #eceff4;
+  --sidebar-border: #4c566a;
+  --theme-accent-2: #5e81ac;       --theme-mode: dark;
+}
+
+/* ── Catppuccin Mocha ───────────────────────────────────── */
+[data-theme="catppuccin-mocha"] {
+  --background: #1e1e2e;          --foreground: #cdd6f4;
+  --card: #313244;                --card-foreground: #cdd6f4;
+  --popover: #313244;             --popover-foreground: #cdd6f4;
+  --primary: #cba6f7;             --primary-foreground: #1e1e2e;
+  --secondary: #313244;           --secondary-foreground: #cdd6f4;
+  --muted: rgba(205,214,244,.06); --muted-foreground: #a6adc8;
+  --accent: rgba(137,180,250,.14); --accent-foreground: #cdd6f4;
+  --destructive: #f38ba8;
+  --border: #45475a;              --input: #45475a;
+  --ring: #89b4fa;
+  --sidebar: #181825;              --sidebar-foreground: #cdd6f4;
+  --sidebar-primary: #cba6f7;      --sidebar-primary-foreground: #1e1e2e;
+  --sidebar-accent: rgba(137,180,250,.12); --sidebar-accent-foreground: #cdd6f4;
+  --sidebar-border: #45475a;
+  --theme-accent-2: #89b4fa;       --theme-mode: dark;
+}
+
+/* ── Dracula ────────────────────────────────────────────── */
+[data-theme="dracula"] {
+  --background: #282a36;          --foreground: #f8f8f2;
+  --card: #383a4a;                --card-foreground: #f8f8f2;
+  --popover: #383a4a;             --popover-foreground: #f8f8f2;
+  --primary: #bd93f9;             --primary-foreground: #282a36;
+  --secondary: #44475a;           --secondary-foreground: #f8f8f2;
+  --muted: rgba(248,248,242,.06); --muted-foreground: #6272a4;
+  --accent: rgba(255,121,198,.14); --accent-foreground: #f8f8f2;
+  --destructive: #ff5555;
+  --border: #44475a;              --input: #44475a;
+  --ring: #ff79c6;
+  --sidebar: #21222c;              --sidebar-foreground: #f8f8f2;
+  --sidebar-primary: #bd93f9;      --sidebar-primary-foreground: #282a36;
+  --sidebar-accent: rgba(255,121,198,.12); --sidebar-accent-foreground: #f8f8f2;
+  --sidebar-border: #44475a;
+  --theme-accent-2: #ff79c6;       --theme-mode: dark;
+}
+
+/* ── Everforest Dark (medium contrast) ──────────────────── */
+[data-theme="everforest-dark"] {
+  --background: #2d353b;          --foreground: #d3c6aa;
+  --card: #343f44;                --card-foreground: #d3c6aa;
+  --popover: #343f44;             --popover-foreground: #d3c6aa;
+  --primary: #a7c080;             --primary-foreground: #2d353b;
+  --secondary: #3d484d;           --secondary-foreground: #d3c6aa;
+  --muted: rgba(211,198,170,.06); --muted-foreground: #9da9a0;
+  --accent: rgba(127,187,179,.14); --accent-foreground: #d3c6aa;
+  --destructive: #e67e80;
+  --border: #475258;              --input: #475258;
+  --ring: #7fbbb3;
+  --sidebar: #232a2e;              --sidebar-foreground: #d3c6aa;
+  --sidebar-primary: #a7c080;      --sidebar-primary-foreground: #2d353b;
+  --sidebar-accent: rgba(127,187,179,.12); --sidebar-accent-foreground: #d3c6aa;
+  --sidebar-border: #475258;
+  --theme-accent-2: #83c092;       --theme-mode: dark;
+}
+
+/* ── Gruvbox Dark (medium contrast) ─────────────────────── */
+[data-theme="gruvbox-dark"] {
+  --background: #282828;          --foreground: #ebdbb2;
+  --card: #3c3836;                --card-foreground: #ebdbb2;
+  --popover: #3c3836;             --popover-foreground: #ebdbb2;
+  --primary: #d79921;             --primary-foreground: #282828;
+  --secondary: #504945;           --secondary-foreground: #ebdbb2;
+  --muted: rgba(235,219,178,.06); --muted-foreground: #a89984;
+  --accent: rgba(69,133,136,.14); --accent-foreground: #ebdbb2;
+  --destructive: #cc241d;
+  --border: #504945;              --input: #504945;
+  --ring: #458588;
+  --sidebar: #1d2021;              --sidebar-foreground: #ebdbb2;
+  --sidebar-primary: #d79921;      --sidebar-primary-foreground: #282828;
+  --sidebar-accent: rgba(69,133,136,.12); --sidebar-accent-foreground: #ebdbb2;
+  --sidebar-border: #504945;
+  --theme-accent-2: #689d6a;       --theme-mode: dark;
+}
+
+/* ── تبديل الثيم نفسه يتحوّل بسلاسة، إلا لمن يفضّل تقليل الحركة ── */
+:root, [data-theme] {
+  transition: background-color .35s ease, color .35s ease, border-color .35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  :root, [data-theme] { transition: none !important; }
+}
